@@ -2,7 +2,8 @@ name: Daily prices
 
 on:
   schedule:
-    - cron: "0 5 * * 1-5"
+    - cron: "0 5 * * 1-5"    # 9 AM UTC+4
+    - cron: "0 17 * * 1-5"   # 9 PM UTC+4
   workflow_dispatch:
 
 jobs:
